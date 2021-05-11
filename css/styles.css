@@ -137,6 +137,49 @@
         width: 150px;
         margin: 25px;
     }
+    .section-proyectos-bm {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-top: 100px;
+    }
+    .card-conteineriproyecto-bm {
+        padding: 25px;
+        width: 90%;
+        height: fit-content;
+        background: rgb(68, 123, 129);
+        border-radius: 10px;
+        border: 5px solid white;
+    }
+    .card-conteineriproyecto-bm>h2 {
+        text-align: center;
+        font-size: 3rem;
+        text-transform: uppercase;
+        color: white;
+    }
+    .conteinerinteriorpro-bm {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .conteinerproyecto-bm {
+        width: 30%;
+        height: fit-content;
+        border: 2px solid white;
+        margin: 15px;
+        padding: 20px;
+        background-color: white;
+        text-align: center;
+    }
+    .conteinerproyecto-bm>a {
+        font-size: 1.5rem;
+        text-decoration: none;
+    }
+    .contacto-bm {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-top: 100px;
+    }
     .footer-bm {
         grid-area: footer;
         width: 100%;
