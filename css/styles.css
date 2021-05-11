@@ -4,81 +4,143 @@
     box-sizing: border-box;
 }
 
-body {
-    display: grid;
-    grid-template-areas: 'nav header' 'nav content' 'footer footer';
-    grid-template-columns: 10% 90%;
-}
-
-.header-bm {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    grid-area: header;
-    width: 100%;
-    height: 190px;
-    background: rgb(68, 123, 129);
-}
-
-.header-bm h1 {
-    font-size: 4rem;
-    color: white;
-}
-
-.nav-bm {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    grid-area: nav;
-    width: 100%;
-    height: 100%;
-    background: rgb(68, 123, 129);
-    background: linear-gradient(174deg, rgba(68, 123, 129, 1) 13%, rgba(0, 0, 0, 1) 93%);
-    top: 0;
-    position: sticky;
-}
-
-.logo-nav {
-    height: 20%;
-}
-
-.logo-nav img {
-    margin-top: 50px;
-    width: 100%;
-}
-
-.navmenu-bm {
-    display: flex;
-    width: 100%;
-    height: 80%;
-    flex-direction: column;
-    align-items: center;
-}
-
-.navmenu-bm>ul {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    list-style: none;
-    justify-content: space-evenly;
-    height: 60%;
-}
-
-.navmenu-bm>ul>li>a {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-}
-
-.section-bm {
-    grid-area: content;
-    height: 850px;
-    background-color: antiquewhite;
-}
-
-.footer-bm {
-    grid-area: footer;
-    width: 100%;
-    height: 200px;
-    background-color: black;
+@media only screen and (min-width: 1024px) {
+    body {
+        display: grid;
+        grid-template-areas: 'nav header' 'nav content' 'footer footer';
+        grid-template-columns: 10% 90%;
+    }
+    .header-bm {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-area: header;
+        width: 100%;
+        height: 190px;
+        background: rgb(68, 123, 129);
+    }
+    .header-bm h1 {
+        font-size: 4rem;
+        color: white;
+    }
+    .nav-bm {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        grid-area: nav;
+        width: 100%;
+        height: 100%;
+        background: rgb(68, 123, 129);
+        background: linear-gradient(174deg, rgba(68, 123, 129, 1) 13%, rgba(0, 0, 0, 1) 93%);
+        top: 0;
+        position: sticky;
+    }
+    .logo-nav {
+        height: 20%;
+    }
+    .logo-nav img {
+        margin-top: 50px;
+        width: 100%;
+    }
+    .navmenu-bm {
+        display: flex;
+        width: 100%;
+        height: 80%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navmenu-bm>ul {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        list-style: none;
+        justify-content: space-evenly;
+        height: 60%;
+    }
+    .navmenu-bm>ul>li>a {
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
+    }
+    .main-bm {
+        grid-area: content;
+        height: fit-content;
+        min-height: 600px;
+        background-image: url(/img/computer-code-wallpaper-1920x1080.jpg);
+        background-attachment: fixed;
+    }
+    .section-sobremi-bm {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        height: 80%;
+        margin-top: 100px;
+        scroll-margin-top: 20px;
+    }
+    .card-sobremi {
+        width: 80%;
+        height: fit-content;
+        border: 5px solid white;
+        background: rgb(68, 123, 129);
+        border-radius: 10px;
+        text-align: center;
+    }
+    .card-sobremi>h2 {
+        color: white;
+        font-size: 2.5rem;
+        padding: 15px;
+    }
+    .card-sobremi>p {
+        margin: 0px 10px 0px 10px;
+        padding: 15px 25px 15px 25px;
+        color: white;
+        font-size: 2rem;
+    }
+    .tecnologias-bm {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-top: 100px;
+    }
+    .card-tecnologias-bm {
+        width: 60%;
+        background: rgb(68, 123, 129);
+        text-align: center;
+        border-radius: 10px;
+        border: 5px solid white;
+    }
+    .card-tecnologias-bm>h2 {
+        color: white;
+        padding-top: 15px;
+        font-size: 2em;
+    }
+    .contenedor-interno-tecnologia>ul {
+        list-style: none;
+    }
+    .contenedor-interno-tecnologia>ul>li>span {
+        color: black;
+        font-size: 20px;
+    }
+    .contenedor-interno-tecnologia>ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 25px;
+    }
+    .contenedor-interno-tecnologia>ul>li {
+        border: 1px solid black;
+        background-color: white;
+        height: 40px;
+        width: 150px;
+        margin: 25px;
+    }
+    .footer-bm {
+        grid-area: footer;
+        width: 100%;
+        height: 200px;
+        background-color: black;
+    }
 }
